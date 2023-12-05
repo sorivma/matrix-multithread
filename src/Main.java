@@ -21,7 +21,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        DeterminantCalculator threadedCalculator = new ThreadedCalculator(matrix, 4);
+        DeterminantCalculator threadedCalculator = new ThreadedCalculator(matrix, 12);
         DeterminantCalculator calculator = new Calculator(matrix);
         long startTimeThreaded = System.currentTimeMillis();
         System.out.println(threadedCalculator.calculateDeterminant());
